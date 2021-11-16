@@ -1,2 +1,2 @@
 -- Show all list rows
-SHOW ROWS first_table;
+SHOW CRATE TABLE first_table FROM ROWS ONLY;
