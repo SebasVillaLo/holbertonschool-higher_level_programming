@@ -2,4 +2,4 @@
 INSERT INTO first_table (
 	id,
 	name
-)values ('89', 'BestSchool')
+) VALUES ('89', 'BestSchool');
