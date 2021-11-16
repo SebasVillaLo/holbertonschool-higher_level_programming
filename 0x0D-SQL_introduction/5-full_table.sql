@@ -1,2 +1,2 @@
 -- Show desc for table
-SHOW TABLE CREATE TABLE first_table;
+SHOW TABLE first_table;
