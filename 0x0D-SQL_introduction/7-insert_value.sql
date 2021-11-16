@@ -2,4 +2,4 @@
 INSERT INTO first_table (
 	id,
 	name
-)values (89, BestSchool)
+)values ('89', 'BestSchool')
