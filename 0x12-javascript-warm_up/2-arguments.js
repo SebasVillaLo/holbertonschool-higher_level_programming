@@ -1,10 +1,8 @@
 #!/usr/bin/node
-const no = 'No argument';
-const si = 'Arguments found';
 if (process.argv.slice(2).length === 0) {
-	console.log(no);
+	console.log('No argument');
 } else if (process.argv.slice(2).length === 1) {
-	console.log(si);
+	console.log('Arguments found');
 } else {
-	console.log(si);
+	console.log('Arguments found');
 }
