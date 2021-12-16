@@ -3,4 +3,4 @@ const argument = process.argv.slice(2);
 const fs = require('fs');
 const fileone = fs.readFileSync('./' + argument[0]);
 const filesecond = fs.readFileSync('./' + argument[1]);
-fs.writeFileSynce('./' + argument[2], fileone + filesecond);
+fs.writeFileSync('./' + argument[2], fileone + filesecond);
