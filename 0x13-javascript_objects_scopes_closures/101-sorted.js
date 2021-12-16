@@ -1,10 +1,10 @@
 #!/usr/bin/node
-const importdic = require('./101-data.js').dict;
+const dict = require('./101-data.js').dict;
 const newdict = {};
-for (const key in importdic) {
-  if (newdict[importdic[key]] === undefined) {
-    newdict[importdic[key]] = [];
+for (const key in dict) {
+  if (newdict[dict[key]] === undefined) {
+    newdict[dict[key]] = [];
   }
-  newdict[importdic[key]].push(key);
+  newdict[dict[key]].push(key);
 }
 console.log(newdict);
