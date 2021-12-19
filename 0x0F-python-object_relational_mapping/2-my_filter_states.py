@@ -4,16 +4,17 @@ import MySQLdb
 from sys import argv
 
 
-def conect():
+def connection():
     """
-    Function for DB
+    Simple Query Function
     """
     try:
         conn = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
                                passwd=argv[2], db=argv[3], charset="utf8")
     except Exception:
-        print("No se puede conectar")
+        print("Can't connect to DB")
         return 0
+
     cur = conn.cursor()
     cur.execute("SELECT * FROM states WHERE name = '{name}' ORDER BY id ASC"
                 .format(name=argv[4]))
@@ -25,4 +26,4 @@ def conect():
     conn.close()
 
 
-conect()
+connection()

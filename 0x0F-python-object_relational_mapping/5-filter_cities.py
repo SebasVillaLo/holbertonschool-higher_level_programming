@@ -4,7 +4,7 @@ import MySQLdb
 from sys import argv
 
 
-def conect():
+def connection():
     """
     Simple Query Function
     """
@@ -32,4 +32,4 @@ def conect():
     conn.close()
 
 
-conect()
+connection()

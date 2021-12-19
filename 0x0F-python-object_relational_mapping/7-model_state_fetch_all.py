@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Statements
+SQLAlchemy Statements
 """
 
 from sys import argv
@@ -11,7 +11,7 @@ from model_state import Base, State
 from sqlalchemy import (create_engine)
 
 
-def conect():
+def connection():
     """Connection to database"""
     try:
         engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.
@@ -31,4 +31,4 @@ def conect():
 
 
 if __name__ == "__main__":
-    conect()
+    connection()

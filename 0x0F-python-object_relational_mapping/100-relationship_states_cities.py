@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Statements
+SQLAlchemy Statements
 """
 
 from sys import argv
@@ -12,7 +12,7 @@ from relationship_city import City
 from sqlalchemy import (create_engine)
 
 
-def conect():
+def connection():
     """Connection to database"""
     try:
         engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.
@@ -21,7 +21,7 @@ def conect():
                                    argv[3]), pool_pre_ping=True)
         Base.metadata.create_all(engine)
     except Exception:
-        print("No se puede conectar")
+        print("Can't connect to DB")
         return 0
 
     Session = sessionmaker(bind=engine)
@@ -36,4 +36,4 @@ def conect():
 
 
 if __name__ == "__main__":
-    conect()
+    connection()
