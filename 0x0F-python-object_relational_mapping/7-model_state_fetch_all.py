@@ -20,7 +20,7 @@ def conect():
                                    argv[3]), pool_pre_ping=True)
         Base.metadata.create_all(engine)
     except Exception:
-        print("No se puede conectar")
+        print("Can't connect to DB")
         return 0
 
     Session = sessionmaker(bind=engine)
