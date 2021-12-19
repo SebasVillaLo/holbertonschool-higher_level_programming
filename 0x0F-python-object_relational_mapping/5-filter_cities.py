@@ -6,13 +6,13 @@ from sys import argv
 
 def conect():
     """
-    Function for DB
+    Simple Query Function
     """
     try:
         conn = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
                                passwd=argv[2], db=argv[3], charset="utf8")
     except Exception:
-        print("No se puede conectar")
+        print("Can't connect to DB")
         return 0
     cur = conn.cursor()
     cur.execute(
