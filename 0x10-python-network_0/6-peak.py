@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""search the peak"""
 
 
 def find_peak(list_of_integers):
+    """this is the funtion for search peak"""
     long = len(list_of_integers)
 
     if not list_of_integers:
