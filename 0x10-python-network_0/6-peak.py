@@ -20,4 +20,4 @@ def find_peak(list_of_integers):
         if i > list_of_integers[idx - 1] and i > list_of_integers[idx + 1]:
             return i
 
-    return list_of_integers[0]
+    return list_of_integers[len(list_of_integers) - 1]
