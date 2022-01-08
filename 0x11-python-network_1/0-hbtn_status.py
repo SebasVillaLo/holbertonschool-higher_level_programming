@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import urllib.request
 
-url = 'https://intranet.hbtn.io/status'
 if __name__ == "__main__":
+    url = 'https://intranet.hbtn.io/status'
     with urllib.request.urlopen(url) as response:
         readcontent = response.read()
         print("Body response:")
