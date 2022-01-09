@@ -10,7 +10,7 @@ if __name__ == "__main__":
     from sys import argv
 
     url = argv[1]
-    value = {'email': argv[2] }
+    value = {'email': argv[2]}
     data = par.urlencode(value).encode('utf-8')
     peticion = request.Request(url, data)
     with request.urlopen(peticion) as response:
