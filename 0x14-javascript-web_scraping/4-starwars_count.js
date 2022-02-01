@@ -8,8 +8,8 @@ request(argv[0], function (err, r, body) {
   const string = JSON.parse(body);
   const rests = string.results;
   for (const i of rests) {
-    for (const j of i.characters) {
-      if (j === url) {
+    for (const j in i.characters) {
+      if (i.characters[j] === url) {
         count += 1;
       }
     }
