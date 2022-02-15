@@ -14,3 +14,4 @@ function nextclass() {
     $('header').removeClass('red').addClass('green');
   }
 };
+// hacerlo con toggleclass es aburrido :D

@@ -8,6 +8,5 @@ function clickMe() {
   })
 };
 function addtext() {
-  $('header').empty()
-  $('header').append('New Header!!!')
+  $('header').empty().append('New Header!!!')
 }

@@ -2,11 +2,10 @@ $(function () {
   addName()
 });
 url = 'https://swapi-api.hbtn.io/api/films/?format=json'
-let count = 0;
-function addName() {
-  $.getJSON(url, function (json) {
-    for (let i of json.results) {
-      $('#list_movies').append(`<li>${count++} ${i.title}</li>`)
+async function addName() {
+  await $.getJSON(url, function (res) {
+    for (let i of res.results) {
+      $('#list_movies').append(`<li>${i.title}</li>`)
     }
   });
 };
